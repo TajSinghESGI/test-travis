@@ -6,4 +6,7 @@ branches:
     - master
 notifications:
     email: false
-script: echo "cool?"  
+    install: 
+      - gem install bundler
+      - bundle install 
+script: bundle exec fastlane ios esgi  
